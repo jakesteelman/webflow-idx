@@ -2,20 +2,20 @@
 /* You have the rights to copy and modify this code but not redistribute it to others. */
 
 /* OVERRIDE DEFAULT STYLING ON EVERYTHING */
-#IDX-quicksearch-47306,
-#IDX-quicksearchForm-47306,
-#IDX-quicksearchForm-47306 .IDX-qsFieldWrap,
-#IDX-quicksearchForm-47306 .IDX-qsLabel,
-#IDX-quicksearchForm-47306 .IDX-qsInput,
-#IDX-quicksearchForm-47306 .IDX-qsInput:hover,
-#IDX-quicksearchForm-47306 .IDX-qsInput:focus,
-#IDX-quicksearchForm-47306 .IDX-qsInput::placeholder,
-#IDX-quicksearchForm-47306 .IDX-qsSelectInput,
-#IDX-quicksearchForm-47306 .IDX-qsSelectInput:hover,
-#IDX-quicksearchForm-47306 .IDX-qsSelectInput:focus,
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput,
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput:hover,
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput:active {
+#IDX-quicksearch-00000,
+#IDX-quicksearchForm-00000,
+#IDX-quicksearchForm-00000 .IDX-qsFieldWrap,
+#IDX-quicksearchForm-00000 .IDX-qsLabel,
+#IDX-quicksearchForm-00000 .IDX-qsInput,
+#IDX-quicksearchForm-00000 .IDX-qsInput:hover,
+#IDX-quicksearchForm-00000 .IDX-qsInput:focus,
+#IDX-quicksearchForm-00000 .IDX-qsInput::placeholder,
+#IDX-quicksearchForm-00000 .IDX-qsSelectInput,
+#IDX-quicksearchForm-00000 .IDX-qsSelectInput:hover,
+#IDX-quicksearchForm-00000 .IDX-qsSelectInput:focus,
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput,
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput:hover,
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput:active {
   position: relative;
   margin: 0;
   float: none;
@@ -30,73 +30,66 @@
 }
 
 /* --- OUTER WRAPPER ELEMENT --- */
-#IDX-quicksearch-47306 {
+#IDX-quicksearch-00000 {
   /* Style the quick search widget outer wrapper here. This element has one child, a <form> with the inner wrapper's ID */
   /* This element has a class of .IDX-quicksearchWrapper. Styling it requires !important property to be added. */
 }
 
 /* --- INNER WRAPPER ELEMENT --- */
-#IDX-quicksearchForm-47306 {
+#IDX-quicksearchForm-00000 {
   /* Style the inner wrapper for the quick search widget here. This element has multiple children: the wrappers for each input. */
   /* This element has a class of .IDX-quicksearchForm. Styling it requires !important property to be added to any of the default properties set first. */
 }
 
 /* --- INPUT WRAPPER ELEMENTS --- */
-#IDX-quicksearchForm-47306 .IDX-qsFieldWrap {
+#IDX-quicksearchForm-00000 .IDX-qsFieldWrap {
   /* Style the wrappers here. These elements each contain a label and an input */
-  /* IDs in case you want to target each wrapper more specifically: 
-        #IDX-qsPtWrap-47306-47306,#IDX-qsMinPriceWrap-47306,#IDX-qsMaxPriceWrap-47306,#IDX-qsMinSqFtWrap-47306,#IDX-qsMinBedWrap-47306,#IDX-qsMinBathWrap-47306,#IDX-qsCityListWrap-47306,#IDX-qsSubmitWrap-47306 
-  */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsLabel {
+#IDX-quicksearchForm-00000 .IDX-qsLabel {
   /* Style the labels here.
-    /* IDs in case you want to target each wrapper more specifically: 
-          #IDX-qsMinPriceLabel-47306,#IDX-qsMaxPriceLabel-47306,#IDX-qsMinBedLabel-47306,#IDX-qsMinSqFtLabel-47306,#IDX-qsMinBathLabel-47306,#IDX-qsCityListLabel-47306
-    */
 }
 
 /* --- TEXT INPUT ELEMENTS --- */
-#IDX-quicksearchForm-47306 .IDX-qsInput {
+#IDX-quicksearchForm-00000 .IDX-qsInput {
   /* Standard Input */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput:hover {
+#IDX-quicksearchForm-00000 .IDX-qsInput:hover {
   /* Standard Input Hover State */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput:focus {
+#IDX-quicksearchForm-00000 .IDX-qsInput:focus {
   /* Standard Input Focused State */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput::placeholder {
+#IDX-quicksearchForm-00000 .IDX-qsInput::placeholder {
   /* Standard Input Placeholder */
 }
 
 /* --- SELECT INPUT ELEMENTS --- */
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsSelectInput {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsSelectInput {
   /* Selector Input */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsSelectInput:hover {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsSelectInput:hover {
   /* Selector Input Hover State */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsSelectInput:focus {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsSelectInput:focus {
   /* Selector Input Focus State */
 }
 
 /* SUBMIT BUTTON */
-/* ID for button is #IDX-qsSubmit-47306 */
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput {
   /*  */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput:hover {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput:hover {
   /*  */
 }
 
-#IDX-quicksearchForm-47306 .IDX-qsInput .IDX-qsButtonInput:active {
+#IDX-quicksearchForm-00000 .IDX-qsInput .IDX-qsButtonInput:active {
   /*  */
 }
 
