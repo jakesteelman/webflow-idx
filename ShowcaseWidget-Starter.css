@@ -1,0 +1,227 @@
+/* Code © Copyright 2022 Jacob Steelman and Carbon Creative LLC. All Rights Reserved.  */
+/* You have the rights to modify and use this code, but not redistribute it to others. */
+/* Before adding to IDX Broker, minify this code with a CSS minifier tool.             */
+
+/* --- Variables --- */
+:root {
+  --cell-columns: 3;
+  --cell-padding-amount: 1rem;
+  --neg-cell-padding-amount: -1rem;
+  --cell-border-width: 1px;
+  --neg-cell-border-width: -1px;
+  --cell-grid-gap: 1rem;
+}
+
+/* --- Outer Table Wrapper. Contains one row child (if responsive is enabled) --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseTable {
+  font-size: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* --- Row Wrapper. Only one of these. Contains x number of cell children --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseRow {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* --- Cell Wrapper. Contains one container item --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseCell {
+  display: block !important;
+  padding: 0rem !important;
+  width: 100%;
+  height: 100%;
+  margin: 0rem !important;
+  box-sizing: content-box !important;
+}
+
+/* --- Listing Container. Contains details about listing. --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseContainer {
+  display: grid;
+  grid-template-columns: repeat(var(--cell-columns), 1fr);
+  grid-template-rows: 1fr;
+  gap: var(--cell-grid-gap);
+  justify-items: stretch;
+  align-items: stretch;
+  position: relative;
+  height: auto !important;
+  border-radius: 0.5rem;
+  border: var(--cell-border-width) solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: var(--cell-padding-amount);
+}
+
+/* --- Link to Listing. Wraps the .IDX-showcasePhoto element --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseLink {
+  grid-column: span var(--cell-columns);
+  margin-top: calc(var(--neg-cell-padding-amount) + var(--neg-cell-border-width));
+  margin-right: calc(var(--neg-cell-padding-amount) + var(--neg-cell-border-width));
+  margin-left: calc(var(--neg-cell-padding-amount) + var(--neg-cell-border-width));
+  height: auto !important;
+  display: block;
+  position: relative;
+  padding-top: 62.5%;
+  /* 16:10 Aspect Ratio */
+  overflow: hidden;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+/* --- Showcase Photo --- */
+#IDX-showcaseGallery-47308 .IDX-showcasePhoto {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  inset: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: transform 300ms ease-in-out;
+}
+
+/* --- Showcase Photo Hover Animation --- */
+#IDX-showcaseGallery-47308 .IDX-showcasePhoto:hover {
+  transform: scale(1.1);
+}
+
+/* --- Listing ID Text Block --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseListingID {
+  display: none;
+}
+
+/* --- Address Element. --- */
+/* --- This includes ANY part of the address and cascades down. --- */
+/* --- You can override with the below selectors. --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseAddressElement {}
+
+/* --- Address (123 Main Street) --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseAddress {
+  grid-column: span var(--cell-columns);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* --- City State Zip Wrapper --- */
+/* --- This wraps the City, Comma1, State, StateAbrv, and Zipcode classes --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseCityStateZip {
+  grid-column: span var(--cell-columns);
+  margin-top: calc(-1 * var(--cell-grid-gap));
+  padding-bottom: var(--cell-grid-gap);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+}
+
+/* --- City --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseCity {}
+
+/* --- Comma after City, before State --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseComma1 {}
+
+/* --- State (full) i.e. California --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseState {}
+
+/* --- State (abbreviated) i.e. CA --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseStateAbrv {
+  display: none;
+}
+
+/* --- ZIP Code i.e. 90210 --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseZipcode {}
+
+/* --- Listing Price --- */
+#IDX-showcaseGallery-47308 .IDX-showcasePrice {
+  justify-self: left;
+  font-size: 1rem;
+  color: gray;
+}
+
+/* --- Number of Beds --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseBeds {
+  justify-self: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 1rem;
+  color: gray;
+  line-height: 1;
+}
+
+/* --- Bed Icon ahead of Beds --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseBeds::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: #808080;
+  line-height: 1;
+  /* Encode any SVG code into a URL to use here: https://yoksel.github.io/url-encoder/ */
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' viewBox='0 0 14 12' fill='none'%3E%3Cpath d='M6.04568 1.93541H7.95435C8.83758 1.93621 9.60446 2.54396 9.80701 3.40366C9.82401 3.47533 9.88794 3.52599 9.9616 3.52616H12.8864C12.9286 3.52631 12.9691 3.50966 12.999 3.47989C13.0289 3.45012 13.0457 3.40967 13.0457 3.36749V1.77616C13.0457 1.43863 12.9116 1.11494 12.6728 0.876333C12.4341 0.637724 12.1104 0.503752 11.7728 0.503906H2.22718C1.88966 0.503752 1.5659 0.637724 1.32719 0.876333C1.08847 1.11494 0.954346 1.43863 0.954346 1.77616V3.36749C0.954345 3.40967 0.971142 3.45012 1.00102 3.47989C1.03091 3.50966 1.07141 3.52631 1.1136 3.52616H4.03843C4.11224 3.52642 4.1764 3.47557 4.19301 3.40366C4.39557 2.54396 5.16244 1.93621 6.04568 1.93541Z' fill='gray'/%3E%3Cpath d='M0.636417 4.48096C0.467581 4.4808 0.305616 4.5478 0.186231 4.66719C0.0668464 4.78657 -0.000154698 4.94854 2.68218e-07 5.11737V8.45812C-2.50467e-07 8.76059 0.212885 9.02127 0.50925 9.08171C0.583199 9.09692 0.636306 9.16196 0.636417 9.23746V10.526C0.636417 10.8775 0.92135 11.1625 1.27283 11.1625C1.62432 11.1625 1.90925 10.8775 1.90925 10.526V9.25379C1.9091 9.21161 1.92574 9.1711 1.95552 9.14122C1.98529 9.11134 2.02573 9.09454 2.06792 9.09454H11.9321C11.9743 9.09454 12.0147 9.11134 12.0445 9.14122C12.0743 9.1711 12.0909 9.21161 12.0908 9.25379V10.526C12.0908 10.8775 12.3757 11.1625 12.7272 11.1625C13.0787 11.1625 13.3636 10.8775 13.3636 10.526V9.23746C13.3637 9.16196 13.4168 9.09692 13.4908 9.08171C13.7871 9.02127 14 8.76059 14 8.45812V5.11737C14.0002 4.94854 13.9332 4.78657 13.8138 4.66719C13.6944 4.5478 13.5324 4.4808 13.3636 4.48096H0.636417Z' fill='gray'/%3E%3C/svg%3E");
+}
+
+/* --- Number of Bathrooms i.e. 2.1 --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseBaths {
+  justify-self: end;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: 1rem;
+  color: gray;
+  line-height: 1;
+}
+
+#IDX-showcaseGallery-47308 .IDX-showcaseBaths::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  line-height: 1;
+  color: #808080;
+  /* Encode any SVG code into a URL to use here: https://yoksel.github.io/url-encoder/ */
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='16' viewBox='0 0 17 16' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.3333 9.33335C15.5178 9.33468 15.6935 9.41183 15.8193 9.54668C15.9455 9.67886 16.011 9.85761 16 10.04C15.7997 13.3874 13.0267 15.9997 9.67333 16H6.32666C2.97324 15.9997 0.200326 13.3874 -4.91715e-06 10.04C-0.00878807 9.85806 0.0560946 9.68023 0.179995 9.54668C0.304916 9.41018 0.481628 9.33272 0.666662 9.33335H3.07866C3.22565 9.33473 3.3562 9.23967 3.4 9.09935C3.5741 8.54572 4.08631 8.1683 4.66666 8.16601H8.00333C8.58368 8.1683 9.09589 8.54572 9.26999 9.09935C9.31343 9.23849 9.44223 9.33327 9.588 9.33335H13.166C13.3501 9.33335 13.4993 9.18411 13.4993 9.00001V2.00001C13.5001 1.73655 13.3456 1.49736 13.1051 1.38968C12.8647 1.282 12.5834 1.32602 12.3873 1.50201L12.114 1.77535C12.0251 1.86493 11.9943 1.99706 12.0347 2.11668C12.2671 2.80327 12.0907 3.56229 11.5793 4.07601L11.446 4.21268C11.1857 4.47294 10.7637 4.47294 10.5033 4.21268L8.74 2.44868C8.47974 2.18835 8.47974 1.76635 8.74 1.50601L8.87666 1.36935C9.39648 0.872756 10.147 0.701707 10.8307 0.924014C10.9494 0.96174 11.0792 0.930112 11.1673 0.842014L11.476 0.533348C12.0593 -0.00563735 12.9062 -0.148438 13.634 0.169491C14.3617 0.487419 14.8324 1.20583 14.8333 2.00001V9.00001C14.8333 9.18411 14.9826 9.33335 15.1667 9.33335H15.3333ZM7.66666 13.5C7.85076 13.5 8 13.3508 8 13.1667V9.83335C8 9.64925 7.85076 9.50001 7.66666 9.50001H5C4.8159 9.50001 4.66666 9.64925 4.66666 9.83335V13.1667C4.66666 13.3508 4.8159 13.5 5 13.5H7.66666Z' fill='gray'/%3E%3Cpath d='M6 4.05856C6.09626 4.0594 6.19155 4.03939 6.27934 3.99989L7.49 3.44123C7.70663 3.34179 7.85374 3.13434 7.87594 2.89702C7.89813 2.6597 7.79203 2.42856 7.5976 2.29068C7.40318 2.1528 7.14996 2.12912 6.93334 2.22856L5.72067 2.78656C5.43638 2.91774 5.28168 3.22908 5.34883 3.53489C5.41599 3.8407 5.68691 4.05857 6 4.05856Z' fill='black'/%3E%3Cpath d='M9.41467 7.67273C9.75322 7.81715 10.1448 7.65988 10.2893 7.3214L10.8133 6.09473C10.9485 5.75826 10.7899 5.37548 10.4564 5.23312C10.1229 5.09077 9.73684 5.24106 9.58734 5.5714L9.06667 6.80007C8.92318 7.13716 9.07859 7.52688 9.41467 7.67273Z' fill='black'/%3E%3Cpath d='M6.99064 6.05074C7.24968 6.31229 7.67168 6.31438 7.9333 6.05541L8.8813 5.11807C9.13584 4.85799 9.13478 4.44183 8.87891 4.18304C8.62304 3.92426 8.20692 3.91849 7.94397 4.17007L6.99597 5.10807C6.73424 5.36693 6.73185 5.78894 6.99064 6.05074Z' fill='gray'/%3E%3C/svg%3E");
+}
+
+/* --- Number of Full Bathrooms i.e. 2 --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseFull,
+/* --- Number of Partial Bathrooms i.e. 1 --- */
+#IDX-showcaseGallery-47308 .IDX-showcasePartial,
+/* --- Remarks about the listing --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseRemarks,
+/* --- Status i.e. active, pending, sold --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseStatus,
+/* --- Disclaimer link --- */
+#IDX-showcaseGallery-47308 .IDX-showcaseDisclaimerLink {
+  display: none;
+}
+
+/* --- Webflow Tablet Breakpoint --- */
+@media screen and (max-width: 991px)  {
+  #IDX-showcaseGallery-47308 .IDX-showcaseRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- Webflow Mobile Landscape Breakpoint --- */
+@media screen and (max-width: 767px) {
+  #IDX-showcaseGallery-47308 .IDX-showcaseRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Webflow Mobile Portrait Breakpoint --- */
+@media screen and (max-width: 478px)  {
+  #IDX-showcaseGallery-47308 .IDX-showcasePrice,
+  #IDX-showcaseGallery-47308 .IDX-showcaseBaths,
+  #IDX-showcaseGallery-47308 .IDX-showcaseBeds {
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+}
