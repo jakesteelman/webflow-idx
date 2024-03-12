@@ -1,6 +1,6 @@
 Integrating Webflow and IDX
 ------------
-Originally posted on SteelmanDigital.com on May 25, 2022.
+I wrote and posted this initially on SteelmanDigital.com on May 25, 2022. I have yet to update this guide since then, and some things may need to be updated due to some major Webflow updates since then. Feel free to open a pull request on this repo, and I will review and merge the changes if they look good.
 
 ### What is an IDX?
 
